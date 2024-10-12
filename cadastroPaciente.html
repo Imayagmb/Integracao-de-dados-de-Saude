@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Paciente</title>
+    <link rel="stylesheet" href="css/cadastroPaciente.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>Cadastro de Paciente</header>
+        <nav>
+            <ul>
+                <li><a href="#dados-pessoais" class="tab active">Dados Pessoais</a></li>
+                <li><a href="#outros-dados" class="tab">Outros Dados</a></li>
+                <li><a href="#endereco" class="tab">Endereço</a></li>
+                <li><a href="#acesso" class="tab">Acesso</a></li>
+            </ul>
+        </nav>
+        <form id="dados-pessoais" class="form-content">
+            <div class="form-section">
+
+                <!--Campo Nome Completo-->
+                <label for="nome-completo">Nome Completo*</label>
+                <input type="text" id="nome-completo" name="nome-completo" placeholder="Nome Completo" required>
+
+                <!--Campo Data de Nascimento-->
+                <label for="data-nascimento">Data Nascimento*</label required>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+
+                <!--Campo CPF-->
+                <label for="cpf">CPF*</label>
+                <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx" required>
+
+                <!--Campo RG-->
+                <label for="rg">RG</label>
+                <input type="text" id="rg" name="rg" placeholder="xx.xxx.xxx-x">
+
+                <!--Campo órgão expedidor-->
+                <label for="orgao-expedidor">Órgão Expedidor*</label>
+                <input type="text" id="orgao-expedidor" name="orgao-expedidor" placeholder="Órgão Expedidor" required>
+
+                <!--Campo Sexo-->
+                <label>Sexo*</label>
+                <select required>
+                    <option disabled selected>Selecione o Sexo--</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Outros</option>
+                </select>
+
+                <!--Campo Gênero-->
+                <label>Gênero*</label>
+                <select required>
+                    <option disabled selected>Selecione o Gênero--</option>
+                    <option>Homem Cisgênero</option>
+                    <option>Mulher Cisgênero</option>
+                    <option>Homem Transgênero</option>
+                    <option>Mulher Transgênero</option>
+                    <option> Não-binário</option>
+                    <option>Outro</option>
+                    <option>Prefiro não responder</option>
+                </select>
+
+                <!--Campo Nome Social-->
+                <label for="nome-social">Nome Social</label>
+                <input type="text" id="nome-social" name="nome-social" placeholder="Digie seu nome social">
+
+                <!--Campo E-mail-->
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@exemplo.com" required>
+
+                <!--Campo Telefone Celular-->
+                <label for="telefone-celular">Telefone Celular*</label>
+                <input type="tel" id="telefone-celular" name="telefone-celular" placeholder="(xxx) xxxxx-xxxx" required>
+
+                <!-- Campo Telefone Fixo -->
+                <label for="telefone-fixo">Telefone Fixo</label>
+                <input type="tel" id="telefone-fixo" name="telefone-fixo" placeholder="(xxx) xxxx-xxxx">
+
+                <!--Campo Naturalidade-->
+                <label for="naturalidade">Naturalidade*</label>
+                <input type="text" id="naturalidade" name="naturalidade" placeholder="Naturalidade" required>
+
+                <!--Campo Nacionalidade-->
+                <label for="naturalidade">Nacionalidade*</label>
+                <input type="text" id="nacionalidade" name="nacionalidade" placeholder="Nacionalidade" required>
+
+                <!--Campo órgão Filhos-->
+                <label for="filhos">Filhos*</label>
+                <input type="number" id="filhos" name="filhos" placeholder="Filhos" required>
+
+                <!--Campo Estado Civil-->
+                <label>Estado Civil*</label>
+                <select required>
+                    <option disabled selected>Selecione seu Estado Civil--</option>
+                    <option>Solteiro</option>
+                    <option>Casado</option>
+                    <option>Separado</option>
+                    <option>Divorciado</option>
+                    <option>Viúvo</option>
+                </select>
+
+                <!--Campo Raça-->
+                <label>Raça*</label>
+                <select required>
+                    <option disabled selected>Selecione sua Raça--</option>
+                    <option>Preto</option>
+                    <option>Pardo</option>
+                    <option>Branco</option>
+                    <option>Indígena</option>
+                    <option>Amarelo</option>
+                </select>
+            </div>
+
+
+
+        </form>
+
+        <!--DADOS COMPLEMENTARES-->
+        <form id="outros-dados" class="form-content" style="display:none;">
+
+            <div class="form-section">
+
+                <!--Cartão Nacional de Saúde CNS-->
+                <label for="cns">Cartão Nacional de Saúde CNS</label>
+                <input type="text" name="cns" placeholder="Digite o CNS" required>
+
+                <!--Campo Escolaridade-->
+                <label>Escolaridade*</label>
+                <select required>
+                    <option disabled selected>Selecione seu nível Escolar--</option>
+                    <option>Nunca frequentou escola</option>
+                    <option>Ensino Fundamental- Completo</option>
+                    <option>Ensino Fundamental- Cursando</option>
+                    <option>Ensino Fundamental- Incompleto</option>
+                    <option>Ensino Médio- Completo</option>
+                    <option>Ensino Médio- Cursando</option>
+                    <option>Ensino Médio- Incompleto</option>
+                    <option>Ensino Superior- Completo</option>
+                    <option>Ensino Superior- Cursando</option>
+                    <option>Ensino Superior- Incompleto</option>
+                </select>
+
+                <!--Campo Ocupação-->
+                <label for="ocupacao">Ocupação*</label>
+                <input type="text" id="ocupacao" name="ocupacao" placeholder="Digite a Ocupação" required>
+
+                <!--Nome da Mãe-->
+                <label for="nome-mae">Nome da Mãe*</label>
+                <input type="text" id="nome-mae" name="nome-mae" placeholder="Nome da Mãe" required>
+
+                <!--Nome do Pai-->
+                <label for="nome-pai">Nome do Pai</label>
+                <input type="text" id="nome-pai" name="nome-pai" placeholder="Nome do Pai">
+
+                <!--Data de Cadastro-->
+                <label for="dt-cadastro">Data de Cadastro*</label required>
+                <input type="date" name="dt-cadastro"></input>
+
+                <!--Contato Familiar-->
+                <label for="contato-familiar">Nome para Contato Familiar</label>
+                <input type="text" id="contato-familiar" name="contato-familiar" placeholder="Digite o contato Familiar"
+                    required>
+
+                <!--CPF do Familiar-->
+                <label for="cpf-familiar">CPF do Familiar</label>
+                <input type="text" id="cpf-familiar" name="cpf-familiar" placeholder="Digite o contato Familiar"
+                    required>
+
+                <!--Telefone Celular do familiar-->
+                <label for="telefone-familiar">Telefone Celular do Familiar*</label>
+                <input type="tel" id="telefone-familiar" name="telefone-familiar" placeholder="(xxx) xxxxx-xxxx"
+                    required>
+
+                <!--Grau de Parentesco do Familiar-->
+                <label>Grau de parentesco acompanhante </label>
+                <select>
+                    <option disabled selected>Selecione o grau de parentesco--</option>
+                    <option>Sem acompanhante</option>
+                    <option>Cônjuge/ companheiro(a)</option>
+                    <option>Filho(a)</option>
+                    <option>Enteado(a)</option>
+                    <option>Neto(a) Bisneto(a)</option>
+                    <option>Pai/ Mãe</option>
+                    <option>Sogro(a) </option>
+                    <option>Irmão/irmã</option>
+                    <option>Genro/Nora</option>
+                    <option>Primo(a)</option>
+                    <option>Não parente</option>
+                    <option>Outros</option>
+                </select>
+
+                <!--Convênio-->
+                <label>Convênio*</label>
+                <select required>
+                    <option disabled selected>Possui convênio?--</option>
+                    <option>Sim</option>
+                    <option>Não</option>
+                </select>
+
+                <!--Campo Matrícula-->
+                <label for="matricula">N° da Matrícula*</label>
+                <input type="number" id="matricula" name="matricula" placeholder="Matrícula" required>
+
+                <!--Campo Peso-->
+                <label for="peso">Peso do Paciente</label>
+                <input type="text" id="peso" name="peso" placeholder="Digite o peso do Paciente"required> 
+
+                <!--Campo IMC-->
+                <label for="imc">IMC do Paciente</label>
+                <input type="text" id="imc" name="imc" placeholder="Digite o IMC do Paciente" required>
+
+                <!--Campo Altura do Paciente-->
+                <label for="altura">Altura do Paciente</label>
+                <input type="text" id="altura" name="altura" placeholder="Digite a Altura do Paciente" required>
+
+                <!--Campo Alergias-->
+                <label for="alergia">Possui alguma Alergia? Se sim, qual?</label>
+                <input type="text" id="alergia" name="alergia" placeholder="Digite aqui a Alergia" required>
+
+                <!--Campo Patologias-->
+                <label for="patologia">Possui alguma Patologia? Se sim, qual?</label>
+                <input type="text" id="patologia" name="patologia" placeholder="Digite aqui a patologia" required>
+
+                <!--Campo Tipo Sanguíneo-->
+                <label>Tipo Sanguíneo*</label>
+                <select required>
+                    <option disabled selected>Selecione o tipo Sanguíneo do Paciente--</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                </select>
+
+                <!--Campo Medicamentos Contínuos-->
+                <label for="meidcamento">Medicamentos Contínuos</label>
+                <input type="text" id="medicamento" name="medicamento" placeholder="Medicamentos Contínuos" required>
+
+
+            </div>
+
+        </form>
+
+
+        <!--ENDEREÇO-->
+        <form id="endereco" class="form-content" style="display:none;">
+
+            <div class="form-section">
+
+                <!--Campo CEP-->
+                <label for="cep">CEP*</label>
+                <input type="cep" id="cep" name="cep" placeholder="xxxxx-xxx" required>
+
+                <!--Campo Logadouro-->
+                <label for="logadouro">Logadouro*</label>
+                <input type="text" id="logadouro" name="logadouro" placeholder="Logadouro" required>
+
+                <!--Campo Número residencial-->
+                <label for="numero-residencial">Número*</label>
+                <input type="number" id="numero-residencial" name="numero-residencial" placeholder="Número" required>
+
+                <!--Campo Complemento-->
+                <label for="complemento">Complemento</label>
+                <input type="tel" id="complemento" name="complemento" placeholder="Complemento" required>
+
+                <!--Campo Bairro-->
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Bairro" required>
+
+                <!--Campo Cidade-->
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade" required>
+
+                <!--Campo UF-->
+                <label>UF</label>
+                <select required>
+                    <option disabled selected>Selecione a UF</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+
+                </select>
+            </div>
+        </form>
+
+        <!--ACESSO-->
+        <form id="acesso" class="form-content" style="display:none;">
+
+            <div class="form-section">
+
+                <label>Senha</label>
+                <input type="text" id="senha" name="senha" placeholder="Crie sua senha" required>
+
+                <label>Confirmar Senha</label>
+                <input type="text" id="confSenha" name="confSenha" placeholder="Confirme sua senha" required>
+
+
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+    <script src="js/cadastroPaciente.js"></script>
+</body>
+
+</html>

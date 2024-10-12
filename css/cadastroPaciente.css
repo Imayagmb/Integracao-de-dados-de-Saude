@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Questrial&display=swap');
+
+
+:root {
+    --background-color: #f5f5f5;
+    --primary-color: #51b8b7;
+    --secondary-color: #132540;
+    --tertiary-color: #cbc9c6;
+    --accent-color: #45484a;
+    --neutral-color: #f8f5f1;
+    --alert-color: #ff6f00;
+    --verde-destaque: #0095B6;
+
+}
+
+/* corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* container principal */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #0000001a;
+    padding: 20px;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    background-color: #fff;
+    /*Cor do form*/
+    overflow: hidden;
+}
+
+
+.container header {
+    /*  cabeçalho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+
+
+.container header::before {
+    /*Sublinhado embaixo do Cadastro*/
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: .5em;
+    height: .2em;
+    width: 2em;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+
+
+
+/* navegação */
+nav {
+    margin-top: 20px;
+}
+
+/* lista de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+}
+
+/* itens da lista de navegação */
+nav ul li {
+    margin: 0 10px;
+}
+
+/* links da navegação */
+nav ul li a {
+    text-decoration: none;
+    color: #aaa;
+    padding: 10px;
+    display: block;
+}
+
+
+nav ul li a.active {
+    color: #99d9d9;
+}
+
+
+/* formulário */
+form {
+    margin-top: 20px;
+}
+
+
+/* seções do formulário */
+div.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: none;
+
+}
+
+.form-section label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.form-section.active {
+    display: flex;
+}
+
+/*  rótulos (labels) das seções do formulário */
+.form-section label {
+    flex: 1 1 30%;
+    margin: 0 0.7rem 0.8rem;
+    text-align: right;
+    padding: 0.5rem;
+    font-family: 'Open Sans';
+    font-size: .9rem;
+    font-weight: bold;
+
+}
+
+/*  inputs e selects das seções do formulário */
+.form-section input,
+.form-section select {
+    flex: 10 1 35%;
+    padding: 8px;
+    margin-bottom: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5rem;
+    font-family: 'Montserrat';
+    font-size: .8rem;
+    letter-spacing: .1em;
+}
+
+
+.form-section input:hover,
+.form-section select:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.form-section input:focus::placeholder,
+.form-section select:focus::placeholder {
+    color: transparent;
+
+}
+
+.form-section input:focus,
+.form-section select:focus {
+    outline: none;
+    border: none;
+    border-bottom: 1.5px solid #99d9d9;
+    border-radius: 0;
+}
+
+::placeholder {
+    color: var(--tertiary-color);
+
+}
+
+input[type="date"]::before {
+    content: attr(placeholder);
+    color: #888;
+    /* Cor para o texto do placeholder */
+}
+
+
+
+/* botão */
+.btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+}
+
+button {
+
+    width: 100px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* botão ao passar o mouse */
+button:hover {
+    background-color: var(--verde-destaque);
+    color: #fff;
+}
+
+/*Responsividade*/
+@media screen and (min-width: 412px) {
+
+    /* Estilos para telas com largura mínima de 412px */
+    .form-section {
+        display: flex;
+    }
+
+    .form-section label {
+        flex: 1 1 30%;
+        /* margin: 0  0.7rem 0.8rem ; */
+        text-align: left;
+
+
+    }
+
+    .form-section input,
+    .form-section select {
+        flex: 10 1 45%;
+
+    }
+
+}
