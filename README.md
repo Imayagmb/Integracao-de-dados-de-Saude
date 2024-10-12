@@ -1,11 +1,11 @@
 <h1>Projeto de Integração de Dados de Saúde</h1>
 <h3>Este projeto visa a criação de uma plataforma para integrar e gerenciar dados de saúde, <br> oferecendo uma interface intuitiva para o cadastro e gestão de informações de pacientes, <br> funcionários e profissionais de saúde.</h3>
 
-<h2>Status do Projeto
+<h2>Status do Projeto <br>
 O projeto está em desenvolvimento e as seguintes páginas de front-end foram implementadas até o momento:</h2>
 
-<h6>Cadastro de Paciente: Formulário para registrar dados pessoais e médicos de pacientes.
-Cadastro de Funcionário: Interface para adicionar novos funcionários ao sistema.
+<h5>Cadastro de Paciente: Formulário para registrar dados pessoais e médicos de pacientes.</h5>
+<h5>Cadastro de Funcionário: Interface para adicionar novos funcionários ao sistema.</h5>
 Cadastro de Profissional de Saúde: Página para registrar profissionais de saúde, como médicos, enfermeiros, etc.
 Página de Anamnese: Formulário para coletar informações detalhadas sobre a saúde do paciente, como histórico médico e sintomas.</h6>
 
