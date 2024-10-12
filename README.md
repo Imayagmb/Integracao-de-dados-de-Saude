@@ -8,12 +8,13 @@
 Cadastro de Funcionário: Interface para adicionar novos funcionários ao sistema.
 Cadastro de Profissional de Saúde: Página para registrar profissionais de saúde, como médicos, enfermeiros, etc.
 Página de Anamnese: Formulário para coletar informações detalhadas sobre a saúde do paciente, como histórico médico e sintomas.</h6>
-Próximos Passos
-O projeto está em andamento e futuras funcionalidades estão planejadas, como:
+
+<h2>Próximos Passos
+O projeto está em andamento e futuras funcionalidades estão planejadas, como:</h2>
 
 Registro de Evolução do Paciente
 Gestão de prontuários eletrônicos
-Painéis de acompanhamento e relatórios médicos
+Painéis de acompanhamento e relatórios médicos, entre outros.
 Tecnologias Utilizadas
 HTML: Estrutura das páginas.
 CSS: Estilização e responsividade das interfaces.
