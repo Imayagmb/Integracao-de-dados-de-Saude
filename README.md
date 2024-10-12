@@ -24,4 +24,5 @@ O projeto está em andamento e futuras funcionalidades estão planejadas, como:
 - **HTML**: Estrutura das páginas.
 - **CSS**: Estilização e responsividade das interfaces.
 - **JavaScript**: Interatividade e manipulação de dados na interface.
+- **Back-End (em planejamento): PHP e MySQL para gerenciamento de banco de dados**
 
