@@ -4,10 +4,10 @@
 <h2>Status do Projeto <br>
 O projeto está em desenvolvimento e as seguintes páginas de front-end foram implementadas até o momento:</h2>
 
-<h5>Cadastro de Paciente: Formulário para registrar dados pessoais e médicos de pacientes.
-<h5>Cadastro de Funcionário: Interface para adicionar novos funcionários ao sistema.
-Cadastro de Profissional de Saúde: Página para registrar profissionais de saúde, como médicos, enfermeiros, etc.
-Página de Anamnese: Formulário para coletar informações detalhadas sobre a saúde do paciente, como histórico médico e sintomas.</h5>
+<h5>.Cadastro de Paciente: Formulário para registrar dados pessoais e médicos de pacientes.
+.Cadastro de Funcionário: Interface para adicionar novos funcionários ao sistema.
+.Cadastro de Profissional de Saúde: Página para registrar profissionais de saúde, como médicos, enfermeiros, etc.
+.Página de Anamnese: Formulário para coletar informações detalhadas sobre a saúde do paciente, como histórico médico e sintomas.</h5>
 
 <h2>Próximos Passos
 O projeto está em andamento e futuras funcionalidades estão planejadas, como:</h2>
