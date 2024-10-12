@@ -25,10 +25,3 @@ O projeto está em andamento e futuras funcionalidades estão planejadas, como:
 - **CSS**: Estilização e responsividade das interfaces.
 - **JavaScript**: Interatividade e manipulação de dados na interface.
 
-## Como Contribuir
-
-Contribuições são bem-vindas! Se você deseja colaborar com o projeto, abra uma issue ou envie um pull request.
-
-## Contato
-
-Para mais informações ou dúvidas, entre em contato por meio de [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
