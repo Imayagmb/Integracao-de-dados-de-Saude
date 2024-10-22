@@ -38,9 +38,6 @@
           <button class="tab" onclick="openTab(event, 'avaliacao-dor')">
             Avaliação da dor
           </button>
-          <button class="tab" onclick="openTab(event, 'imagens-anatomicas')">
-            Imagens Anatômicas
-          </button>
           <button class="tab" onclick="openTab(event, 'historico-anamnese')">
             Histórico Anamnese
           </button>
@@ -48,6 +45,7 @@
 
         <!-- Conteúdos das abas -->
         <div class="tab-content" id="principal">
+          <!--Borda-->
           <div class="evolucao-padrao-container">
             <!--Botão de abrir modal-->
             <div class="abrir-modal-container">
@@ -92,7 +90,7 @@
                     </tr>
                   </tbody>
                 </table>
-               
+
                 <button class="fechar-btn">Fechar</button>
               </div>
             </div>
@@ -127,10 +125,13 @@
             </div>
           </div>
         </div>
+<!--OBSERVAÇÕES-->
 
         <div class="tab-content" id="observacoes" style="display: none">
-          <h3>Observações</h3>
-          <textarea class="anamnese-input" rows="10"></textarea>
+          <div class="evolucao-padrao-container">
+            <h3>Observações</h3>
+            <textarea class="anamnese-input" rows="10"></textarea>
+          </div>
         </div>
 
         <!--ANTROPOMETRIA= Medidas Corporal-->
@@ -227,23 +228,122 @@
             </div>
           </div>
         </div>
-
+        <!--AVALIAÇÃO DA DOR-->
         <div class="tab-content" id="avaliacao-dor" style="display: none">
-          <h3>Avaliação da Dor</h3>
-          <p>Conteúdo sobre a avaliação da dor vai aqui...</p>
+          <h2>Qual o nível de dor do paciente?</h2>
+
+          <!-- Container principal que agrupa todos os cards -->
+          <div class="all-groups-container">
+              <!-- Card 1: Grupo 1 - Sem dor -->
+              <div class="pain-card" id="card-1" data-level="0">
+                  <img src="img/escala-dor_1.png" alt="Nível 0">
+                  <p>0</p>
+                  <br>
+                  <p class="grupo-nome">Sem dor</p> <!-- Nome do grupo -->
+              </div>
+              
+              <!-- Card 2, 3 e 4: Grupo 2 - Dor leve -->
+              <div class="pain-card" id="card-2" data-level="1">
+                  <img src="img/escala-dor_2.png" alt="Nível 1">
+                  <p>1</p>
+              </div>
+              <div class="pain-card" id="card-3" data-level="2">
+                  <img src="img/escala-dor_3.png" alt="Nível 2">
+                  <p>2</p>
+                  <br>
+                  <p class="grupo-nome">Dor leve</p> <!-- Nome do grupo --> 
+              </div>
+              <div class="pain-card" id="card-4" data-level="3">
+                  <img src="img/escala-dor_4.png" alt="Nível 3">
+                  <p>3</p>
+              </div>
+      
+              <!-- Card 5, 6 e 7: Grupo 3 - Dor moderada -->
+              <div class="pain-card" id="card-5" data-level="4">
+                  <img src="img/escala-dor_4.png" alt="Nível 4">
+                  <p>4</p>
+              </div>
+              <div class="pain-card" id="card-6" data-level="5">
+                  <img src="img/escala-dor_5.png" alt="Nível 5">
+                  <p>5</p>
+                  <br>
+                  <p class="grupo-nome">Dor moderada</p> <!-- Nome do grupo -->
+              </div>
+              <div class="pain-card" id="card-7" data-level="6">
+                  <img src="img/escala-dor_6.png" alt="Nível 6">
+                  <p>6</p>
+              </div>
+      
+              <!-- Card 8, 9, 10 e 11: Grupo 4 - Dor intensa -->
+              <div class="pain-card" id="card-8" data-level="7">
+                  <img src="img/escala-dor_7.png" alt="Nível 7">
+                  <p>7</p>
+              </div>
+              <div class="pain-card" id="card-9" data-level="8">
+                  <img src="img/escala-dor_8.png" alt="Nível 8">
+                  <p>8</p>
+                  <br>
+                  <p class="grupo-nome">Dor intensa</p> <!-- Nome do grupo -->
+              </div>
+              <div class="pain-card" id="card-10" data-level="9">
+                  <img src="img/escala-dor_9.png" alt="Nível 9">
+                  <p>9</p>
+              </div>
+              <div class="pain-card" id="card-11" data-level="10">
+                  <img src="img/escala-dor_10.png" alt="Nível 10">
+                  <p>10</p>
+              </div>
+          </div>      
+      
+
         </div>
 
-        <div class="tab-content" id="imagens-anatomicas" style="display: none">
-          <h3>Imagens Anatômicas</h3>
-          <p>Conteúdo sobre imagens anatômicas vai aqui...</p>
-        </div>
-
+        <!--HISTÓRICO ANAMNESE-->
         <div class="tab-content" id="historico-anamnese" style="display: none">
           <h3>Histórico Anamnese</h3>
-          <p>Conteúdo do histórico de anamnese vai aqui...</p>
+          <table class="tabela">
+            <thead>
+              <tr>
+                  <th><input type="checkbox"></th>
+                  <th>Data</th>
+                  <th>Descrição</th>
+                  <th>Visualizar</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><input type="checkbox"></td>
+                  <td>01/01/2022 às 12:00:00</td>
+                  <td>Anamnese Padrão</td>
+                  <td><button class="btn-visualizar" onclick="abrirModal()">Anamnese</button></td>
+              </tr>
+          </tbody>
+      </table>
+      <div id="modalAnamnese" class="modal modalhistorico">
+        <div class="modal-conteudo">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+            <div class="modal-header">
+              <div class="paciente-info">
+                <div class="perfil-foto">
+                  <img src="caminho-para-imagem.jpg" alt="Foto do Paciente" />
+                </div>
+                <div class="paciente-detalhes">
+                  <h2>Lanna</h2>
+                  <p>11/07/2021</p>
+                  <p>Convênio: <span class="sem-convenio">Sem Convênio</span></p>
+                </div>
+        </div>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+        </table>
         </div>
       </section>
     </main>
+
+   
 
     <script src="js/anamnese.js"></script>
   </body>

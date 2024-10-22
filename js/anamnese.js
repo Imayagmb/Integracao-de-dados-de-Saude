@@ -55,3 +55,29 @@ window.onclick = function(event) {
 document.querySelector('.fechar-btn').addEventListener('click', function() {
   modal.style.display = 'none';
 });
+
+
+
+//CARD AVALIAÇÃO DA DOR
+
+const cards = document.querySelectorAll('.pain-card');
+const alertBox = document.getElementById('alert');
+
+cards.forEach(card => {
+    card.addEventListener('click', () => {
+        alertBox.classList.remove('hidden'); // Mostra o alerta
+        setTimeout(() => {
+            alertBox.classList.add('hidden'); // Esconde o alerta após 3 segundos
+        }, 3000);
+    });
+});
+
+//MODAL ANAMNESE
+
+function abrirModal() {
+  document.getElementById('modalAnamnese').style.display = 'block';
+}
+
+function fecharModal() {
+  document.getElementById('modalAnamnese').style.display = 'none';
+}
