@@ -58,19 +58,26 @@ document.querySelector('.fechar-btn').addEventListener('click', function() {
 
 
 
-//CARD AVALIAÇÃO DA DOR
+//ALERTA NO CARD AVALIAÇÃO DA DOR
+// Função para exibir o alerta de sucesso
+function showSuccessAlert() {
+  const alertBox = document.getElementById('sucesso-alerta');
+  alertBox.classList.add('show');
 
-const cards = document.querySelectorAll('.pain-card');
-const alertBox = document.getElementById('alert');
+  // Remove o alerta após 4 segundos
+  setTimeout(() => {
+      alertBox.classList.remove('show');
+  }, 4000);
+}
 
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        alertBox.classList.remove('hidden'); // Mostra o alerta
-        setTimeout(() => {
-            alertBox.classList.add('hidden'); // Esconde o alerta após 3 segundos
-        }, 3000);
-    });
+// Evento de clique para todos os cards
+const painCards = document.querySelectorAll('.pain-card');
+painCards.forEach(card => {
+  card.addEventListener('click', () => {
+      showSuccessAlert();
+  });
 });
+
 
 //MODAL ANAMNESE
 

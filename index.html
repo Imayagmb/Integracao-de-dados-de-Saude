@@ -230,72 +230,86 @@
         </div>
         <!--AVALIAÇÃO DA DOR-->
         <div class="tab-content" id="avaliacao-dor" style="display: none">
+          <div class="evolucao-padrao-container">
           <h2>Qual o nível de dor do paciente?</h2>
 
           <!-- Container principal que agrupa todos os cards -->
-          <div class="all-groups-container">
-              <!-- Card 1: Grupo 1 - Sem dor -->
-              <div class="pain-card" id="card-1" data-level="0">
-                  <img src="img/escala-dor_1.png" alt="Nível 0">
-                  <p>0</p>
-                  <br>
-                  <p class="grupo-nome">Sem dor</p> <!-- Nome do grupo -->
-              </div>
+          <div class="todo-grupo-card-container">
               
-              <!-- Card 2, 3 e 4: Grupo 2 - Dor leve -->
-              <div class="pain-card" id="card-2" data-level="1">
-                  <img src="img/escala-dor_2.png" alt="Nível 1">
-                  <p>1</p>
+              <!-- Grupo 1 - Card 1 separado -->
+              <div class="grupo-card" id="group-1">
+                  <div class="pain-card" id="card-1" data-level="0">
+                      <img src="img/escala-dor_1.png" alt="Nível 0">
+                      <p>0</p>
+                      <br>
+                      <p class="grupo-nome"> Sem Dor </p>
+                  </div>
               </div>
-              <div class="pain-card" id="card-3" data-level="2">
-                  <img src="img/escala-dor_3.png" alt="Nível 2">
-                  <p>2</p>
-                  <br>
-                  <p class="grupo-nome">Dor leve</p> <!-- Nome do grupo --> 
+          
+              <!-- Grupo 2 - Cards 2, 3 e 4 juntos -->
+              <div class="grupo-card" id="group-2">
+                  <div class="pain-card" id="card-2" data-level="1">
+                      <img src="img/escala-dor_2.png" alt="Nível 1">
+                      <p>1</p>
+                  </div>
+                  <div class="pain-card" id="card-3" data-level="2">
+                      <img src="img/escala-dor_3.png" alt="Nível 2">
+                      <p>2</p>
+                      <br>
+                      <p class="grupo-nome"> Leve </p>
+                  </div>
+                  <div class="pain-card" id="card-4" data-level="3">
+                      <img src="img/escala-dor_4.png" alt="Nível 3">
+                      <p>3</p>
+                  </div>
               </div>
-              <div class="pain-card" id="card-4" data-level="3">
-                  <img src="img/escala-dor_4.png" alt="Nível 3">
-                  <p>3</p>
+          
+              <!-- Grupo 3 - Cards 5, 6 e 7 juntos -->
+              <div class="grupo-card" id="group-3">
+                  <div class="pain-card" id="card-5" data-level="4">
+                      <img src="img/escala-dor_4.png" alt="Nível 4">
+                      <p>4</p>
+                  </div>
+                  <div class="pain-card" id="card-6" data-level="5">
+                      <img src="img/escala-dor_5.png" alt="Nível 5">
+                      <p>5</p>
+                      <br>
+                      <p class="grupo-nome"> Moderada</p>
+                  </div>
+                  <div class="pain-card" id="card-7" data-level="6">
+                      <img src="img/escala-dor_6.png" alt="Nível 6">
+                      <p>6</p>
+                  </div>
               </div>
+          
+              <!-- Grupo 4 - Cards 8, 9, 10 e 11 juntos -->
+              <div class="grupo-card" id="group-4">
+                  <div class="pain-card" id="card-8" data-level="7">
+                      <img src="img/escala-dor_7.png" alt="Nível 7">
+                      <p>7</p>
+                  </div>
+                  <div class="pain-card" id="card-9" data-level="8">
+                      <img src="img/escala-dor_8.png" alt="Nível 8">
+                      <p>8</p>
+                      <br>
+                      <p class="grupo-nome"> Intensa</p>
+                  </div>
+                  <div class="pain-card" id="card-10" data-level="9">
+                      <img src="img/escala-dor_9.png" alt="Nível 9">
+                      <p>9</p>
+                  </div>
+                  <div class="pain-card" id="card-11" data-level="10">
+                      <img src="img/escala-dor_10.png" alt="Nível 10">
+                      <p>10</p>
+                  </div>
+              </div>
+              <!-- Alerta de sucesso -->
+            <div id="sucesso-alerta" class="sucesso-alerta">Nível de dor alterado com sucesso!</div>
+          
+          </div>
+              
       
-              <!-- Card 5, 6 e 7: Grupo 3 - Dor moderada -->
-              <div class="pain-card" id="card-5" data-level="4">
-                  <img src="img/escala-dor_4.png" alt="Nível 4">
-                  <p>4</p>
-              </div>
-              <div class="pain-card" id="card-6" data-level="5">
-                  <img src="img/escala-dor_5.png" alt="Nível 5">
-                  <p>5</p>
-                  <br>
-                  <p class="grupo-nome">Dor moderada</p> <!-- Nome do grupo -->
-              </div>
-              <div class="pain-card" id="card-7" data-level="6">
-                  <img src="img/escala-dor_6.png" alt="Nível 6">
-                  <p>6</p>
-              </div>
-      
-              <!-- Card 8, 9, 10 e 11: Grupo 4 - Dor intensa -->
-              <div class="pain-card" id="card-8" data-level="7">
-                  <img src="img/escala-dor_7.png" alt="Nível 7">
-                  <p>7</p>
-              </div>
-              <div class="pain-card" id="card-9" data-level="8">
-                  <img src="img/escala-dor_8.png" alt="Nível 8">
-                  <p>8</p>
-                  <br>
-                  <p class="grupo-nome">Dor intensa</p> <!-- Nome do grupo -->
-              </div>
-              <div class="pain-card" id="card-10" data-level="9">
-                  <img src="img/escala-dor_9.png" alt="Nível 9">
-                  <p>9</p>
-              </div>
-              <div class="pain-card" id="card-11" data-level="10">
-                  <img src="img/escala-dor_10.png" alt="Nível 10">
-                  <p>10</p>
-              </div>
-          </div>      
-      
-
+</div>
         </div>
 
         <!--HISTÓRICO ANAMNESE-->
