@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação Ginecológica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container-ginecologia">
+      <header>
+        <h1>Avaliação Ginecológica</h1>
+      </header>
+
+      <form id="form-avaliacao">
+        <!-- Seção de Orientação Sexual -->
+        <div class="evolucao-ginecologia-container">
+          <div class="form-section-ginecologia">
+            <h2>Orientação Sexual</h2>
+            <label
+              ><input type="radio" name="orientacao" value="heterossexual" />
+              Heterossexual</label
+            >
+            <label
+              ><input type="radio" name="orientacao" value="homossexual" />
+              Homossexual</label
+            >
+            <label
+              ><input type="radio" name="orientacao" value="assexual" />
+              Assexual</label
+            >
+            <label
+              ><input type="radio" name="orientacao" value="pansexual" />
+              Pansexual</label
+            >
+          </div>
+        </div>
+        <!-- Seção de Identidade de Gênero -->
+        <div class="evolucao-ginecologia-container">
+          <div class="form-section-ginecologia">
+            <h2>Identidade de Gênero</h2>
+            <label
+              ><input type="radio" name="genero" value="cisgenero" />
+              Cisgênero</label
+            >
+            <label
+              ><input type="radio" name="genero" value="transgenero" />
+              Transgênero</label
+            >
+            <label
+              ><input type="radio" name="genero" value="nao-binario" />
+              Não-binário</label
+            >
+          </div>
+        </div>
+
+        <!-- Seção de Questão Clínica -->
+        <div class="form-section-ginecologia">
+          <h2>Questão Clínica:</h2>
+          <textarea name="questao-clinica"></textarea>
+        </div>
+
+        <!-- Seção de Método Anticoncepcional -->
+        <div class="form-section-ginecologia">
+          <h2>Método Anticoncepcional:</h2>
+          <input type="text" name="metodo-anticoncepcional" />
+          <h2>Frequência:</h2>
+          <input type="text" name="frequencia" />
+          <h2>Tempo de Uso:</h2>
+          <input type="text" name="tempo-uso" />
+        </div>
+
+        <!-- Seção de Conhecimento sobre Métodos-->
+        <div class="evolucao-ginecologia-container">
+          <div class="form-section-ginecologia">
+            <h2>Conhecimento sobre Métodos:</h2>
+            <label
+              ><input type="radio" name="conhecimento-metodo" value="nao" />
+              Não</label
+            >
+            <label
+              ><input type="radio" name="conhecimento-metodo" value="sim" />
+              Sim</label
+            >
+            <label
+              ><input type="radio" name="conhecimento-metodo" value="pouco" />
+              Pouco</label
+            >
+          </div>
+        </div>
+
+        <!-- Seção de Satisfação com o Método Atual -->
+        <div class="evolucao-ginecologia-container">
+          <div class="form-section-ginecologia">
+            <h2>Satisfação com o Método Atual:</h2>
+            <label
+              ><input
+                type="radio"
+                name="satisfacao-metodo"
+                value="insatisfeito"
+              />
+              Insatisfeito</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="satisfacao-metodo"
+                value="satisfeito"
+              />
+              Satisfeito</label
+            >
+            <label
+              ><input type="radio" name="satisfacao-metodo" value="outros" />
+              Outros</label
+            >
+          </div>
+        </div>
+
+        <!-- Seção de Data da Última Consulta e Mamografia -->
+        <div class="form-section-ginecologia">
+          <label>Data do último Papanicolau:</label>
+          <input type="text" name="ultimo-papanicolau" />
+          <label>Data da Última Mamografia:</label>
+          <input type="text" name="ultima-mamografia" />
+        </div>
+
+        <!-- Seção de Atividades Sexuais -->
+        <div class="evolucao-ginecologia-container">
+          <div class="form-section-ginecologia">
+            <h2>Atividades Sexuais</h2>
+            <label
+              ><input type="checkbox" name="atividades" value="dispareunia" />
+              Dispareunia</label
+            >
+            <label
+              ><input type="checkbox" name="atividades" value="sangramento" />
+              Sangramento Recorrente</label
+            >
+            <label
+              ><input type="checkbox" name="atividades" value="infeccoes" />
+              Histórico de Infecções</label
+            >
+            <label
+              ><input type="checkbox" name="atividades" value="outros" />
+              Outros</label
+            >
+          </div>
+        </div>
+
+        <!-- Seção de Freqüência das Relações Sexuais -->
+        <div class="form-section-ginecologia">
+          <label>Frequência das Relações Sexuais:</label>
+          <input type="text" name="frequencia-relacoes" />
+        </div>
+
+        <!-- Seção de Gestação e Partos -->
+        <div class="evolucao-ginecologia-container">
+          <div class="form-section-ginecologia">
+            <h2>Gestação?</h2>
+            <label
+              ><input type="radio" name="gestacao" value="nulipara" />
+              Nulípara</label
+            >
+            <label
+              ><input type="radio" name="gestacao" value="multipara" />
+              Multípara</label
+            >
+            <label>Número de Gestações:</label>
+            <input type="number" name="numero-gestacoes" />
+          </div>
+          <!-- Seção de tipo de parto -->
+         
+            <div class="form-section-ginecologia">
+              <h2>Tipo</h2>
+              <label
+                ><input type="checkbox" name="atividades" value="cesariana" />
+                Cesariana</label
+              >
+              <label
+                ><input
+                  type="checkbox"
+                  name="atividades"
+                  value="parto-vaginal"
+                />
+                Parto Vaginal</label
+              >
+              <label
+                ><input type="checkbox" name="atividades" value="aborto" />
+                Aborto</label
+              >
+              <label>Data do último Parto:</label>
+              <input type="text" name="ultimo-parto" />
+            </div>
+            </div>
+          
+        
+            <div class="evolucao-ginecologia-container">
+                <div class="form-section-ginecologia">
+                  <h2>Intercorrência em gestações anteriores? </h2>
+                  <label
+                    ><input
+                      type="radio"
+                      name="intecorrencia-gestacao"
+                      value="sim"
+                    />
+                    Sim</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="intecorrencia-gestacao"
+                      value="nao"
+                    />
+                    Não</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-section-ginecologia">
+                <h2>Se sim, quais?</h2>
+                <input type="text" name="intercorencia-parto" />
+                <h2>Menopausa:</h2>
+                <input type="text" name="menopausa" />
+                <h2>DUM:</h2>
+                <input type="text" name="dum" />
+              </div>
+
+        <!-- Seção de Ciclo Menstrual -->
+         <div class="evolucao-ginecologia-container">
+                <div class="form-section-ginecologia">
+                  <h2>Características do ciclo menstrual: </h2>
+                  <label
+                    ><input
+                      type="radio"
+                      name="ciclo-menstrual"
+                      value="regular"
+                    />
+                    Regular</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="ciclo-menstrual"
+                      value="irregular"
+                    />
+                    Irregular</label
+                  >
+                </div>
+              </div>
+
+              <div class="evolucao-ginecologia-container">
+                <div class="form-section-ginecologia">
+                  <h2>Intercorrência em gestações anteriores? </h2>
+                  <label
+                    ><input
+                      type="radio"
+                      name="ciclo-fluxo"
+                      value="normal"
+                    />
+                    Normal</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="ciclo-fluxo"
+                      value="intenso"
+                    />
+                    Intenso</label
+                  >
+                </div>
+              </div>
+
+              <div class="form-section-ginecologia">
+                <h2>Duração:</h2>
+                <input type="text" name="ciclo-duracao" />
+                <h2>Quantidade de absorventes diários:</h2>
+                <input type="text" name="ciclo-absorventes" />
+              </div>
+
+              <!--TPM-->
+              <div class="evolucao-ginecologia-container">
+                <div class="form-section-ginecologia">
+                  <h2>Tensão pré-menstrual? (TPM)</h2>
+                  <label
+                    ><input
+                      type="radio"
+                      name="tpm"
+                      value="sim"
+                    />
+                    Sim</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="tpm"
+                      value="nao"
+                    />
+                    Não</label
+                  >
+
+                  <label
+                  ><input
+                    type="radio"
+                    name="tpm"
+                    value="algumas-vezes"
+                  />
+                  Algumas vezes</label
+                >
+                </div>
+              </div>
+
+              <!--Tabagismo-->
+              <div class="evolucao-ginecologia-container">
+                <div class="form-section-ginecologia">
+                  <h2>Tabagismo?</h2>
+                  <label
+                    ><input
+                      type="radio"
+                      name="tabagismo"
+                      value="sim"
+                    />
+                    Sim</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="tabagismo"
+                      value="nao"
+                    />
+                    Não</label
+                  >
+                </div>
+              </div>
+              
+        <div class="form-section-ginecologia">
+          <label>Informações Adicionais:</label>
+          <input type="text" name="informacoes-adicionais"></input>
+        </div>
+
+        <!--Etilismo-->
+
+        <div class="evolucao-ginecologia-container">
+            <div class="form-section-ginecologia">
+              <h2>Etilismo?</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="etilismo"
+                  value="sim"
+                />
+                Sim</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="etilismo"
+                  value="nao"
+                />
+                Não</label
+              >
+            </div>
+          </div>
+
+          <div class="form-section-ginecologia">
+            <label>Informações Adicionais:</label>
+            <input type="text" name="informacoes-adicionais"></input>
+          </div>
+
+          <!--Doenças crônicas-->
+
+          <div class="evolucao-ginecologia-container">
+            <div class="form-section-ginecologia">
+              <h2>Doenças Crônicas?</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="doenca-cronica"
+                  value="sim"
+                />
+                Sim</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="doenca-cronica"
+                  value="nao"
+                />
+                Não</label
+              >
+            </div>
+          </div>
+
+          <div class="form-section-ginecologia">
+            <h2>Se sim, quais?</h2>
+            <input type="text" name="doenca-cronica"></input>
+          </div>
+
+          <!--Terapia medicamentosa-->
+          <div class="evolucao-ginecologia-container">
+            <div class="form-section-ginecologia">
+              <h2>Uso de terapias medicamentosas ou complementares:</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="terapia-medicamentosa"
+                  value="sim"
+                />
+                Sim</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="terapia-medicamentosa"
+                  value="nao"
+                />
+                Não</label
+              >
+
+            </div>
+          </div>
+
+          <div class="form-section-ginecologia">
+            <label>Se sim, quais?</label>
+            <input type="text" name="terapia-medicamentosa"></input>
+          </div>
+
+          <!--Prática de Atividade física-->
+          <div class="evolucao-ginecologia-container">
+            <div class="form-section-ginecologia">
+              <h2>Prática de atividade fisíca:</h2>
+              <label
+                ><input
+                  type="radio"
+                  name="atividade-fisica"
+                  value="sim"
+                />
+                Sim</label
+              >
+              <label
+                ><input
+                  type="radio"
+                  name="atividade-fisica"
+                  value="nao"
+                />
+                Não</label
+              >
+
+        
+            </div>
+          </div>
+
+          <div class="form-section-ginecologia">
+            <label>Informações Adicionais:</label>
+            <input type="text" name="informacoes-adicionais"></input>
+          </div>
+
+        <!--Histórico Familiar de Cancer-->
+        <div class="evolucao-ginecologia-container">
+        <div class="form-section-ginecologia">
+          <h2>Histórico Familiar de Câncer:</h2>
+          <label
+            ><input type="checkbox" name="historico-familiar" value="mama" />
+            Mama</label
+          >
+          <label
+            ><input type="checkbox" name="historico-familiar" value="utero" />
+            Útero</label
+          >
+          <label
+            ><input type="checkbox" name="historico-familiar" value="ovario" />
+            Ovário</label
+          >
+          <label
+            ><input type="checkbox" name="historico-familiar" value="outros" />
+            Outros</label
+          >
+        </div>
+        </div>
+
+        <div class="form-section-ginecologia">
+            <label>Informações Adicionais:</label>
+            <input type="text" name="informacoes-adicionais"></input>
+                    
+            <label>Imunização:</label>
+            <input type="text" name="imunizacao"></input>
+           
+            <label>Alergias:</label>
+            <input type="text" name="alergias"></input>
+                   
+            <label>Informações sobre exames laboratoriais:</label>
+            <input type="text" name="exames-laboratoriais"></input>
+          </div>
+
+          <!--Informe o CID-->
+          <div class="cid-section">
+            <select id="cid">
+              <option value="">CID-10</option>
+              <option value="">NANDA</option>
+              <!-- Add opção do CID-10 -->
+            </select>
+            <input
+              class="cid-input"
+              type="cid"
+              id="cid"
+              name="cid"
+              placeholder="Informe o CID-10"
+            />
+            <button class="add-cid"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          
+        <!-- Botões de ação -->
+        <div class="action-buttons">
+          <button type="button" id="cancelar-ginecologia">Cancelar</button>
+          <button type="submit" id="salvar-ginecologia">Salvar</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

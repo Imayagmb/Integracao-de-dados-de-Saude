@@ -64,13 +64,13 @@
                     <tr>
                       <th>Formulário</th>
                       <th>Descrição</th>
-                      <th>Baixar</th>
+                      <th>Abrir</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Evolução Ginecologia</td>
-                      <td>Evolução Ginecologia</td>
+                      <td>Evolução Ginecológica</td>
+                      <td>Evolução Ginecológica</td>
                       <td><i class="fa fa-download"></i></td>
                     </tr>
                     <tr>
@@ -134,7 +134,7 @@
           </div>
         </div>
 
-        <!--ANTROPOMETRIA= Medidas Corporal-->
+        <!--ANTROPOMETRIA= Medida Corporal-->
 
         <div class="tab-content" id="antropometria" style="display: none">
           <div class="evolucao-padrao-container">
@@ -142,7 +142,7 @@
               <button class="result-button">
                 <i class="fa-solid fa-chart-line"></i> Resultado
               </button>
-              <button class="history-button">
+              <button class="hist-button">
                 <i class="fa-solid fa-table"></i> Histórico
               </button>
             </div>
@@ -226,8 +226,126 @@
                 </div>
               </form>
             </div>
+
+
+
+<!-- Modal Histórico Antropometria -->
+<div id="modalHistoricoAntropometria" class="modal-historico-antropometria">
+  <div class="modal-content-historico-antropometria">
+    <span class="fechar-historico-antropometria">&times;</span>
+    <h2>Histórico Antropométrico</h2>
+    <p>Paciente: Lanna Gabriella</p>
+    <p>Avaliação: IMC e RCQ</p>
+    <table class="tabela-historico-antropometria">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Profissional</th>
+          <th>CM</th>
+          <th>KG</th>
+          <th>IMC</th>
+          <th>GP</th>
+          <th>CC</th>
+          <th>CQ</th>
+          <th>RCQ</th>
+          <!-- Continue com as outras colunas conforme a necessidade -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Exemplo de dados -->
+          <td>12/10/2024</td>
+          <td>Dr. João</td>
+          <td>160</td>
+          <td>70</td>
+          <td>27</td>
+          <td>12</td>
+          <td>90</td>
+          <td>100</td>
+          <td>0.9</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Modal Resultado Avaliação ANTROPOMETRIA-->
+<div id="modalResultadoAvaliacao" class="modal-resultado-avaliacao">
+  <div class="modal-content-resultado-avaliacao">
+    <span class="fechar-resultado-avaliacao">&times;</span>
+    <h2>Resultado Avaliação</h2>
+    <p>Paciente: Lanna Gabriella</p>
+    <p>Avaliação: IMC e RCQ</p>
+    
+    <!-- Checkboxes para Avaliação -->
+    <div class="checkbox-container">
+      <label><input type="checkbox" checked> IMC</label>
+      <label><input type="checkbox" checked> RCQ</label>
+      <label><input type="checkbox" checked> PC</label>
+      <label><input type="checkbox" checked> PT</label>
+      <label><input type="checkbox" checked> PAB</label>
+      <label><input type="checkbox" checked> PS</label>
+      <label><input type="checkbox" checked> PD</label>
+      <label><input type="checkbox" checked> FC</label>
+    </div>
+
+    <!-- Gráfico de Avaliação (Placeholder) -->
+    <div class="grafico-placeholder">
+      <!-- Insira o gráfico aqui ou use uma imagem se necessário -->
+      <p>Gráfico de Avaliação (Exemplo)</p>
+    </div>
+    
+    <!-- Tabelas IMC e RCQ -->
+    <div class="tabelas-container">
+      <div class="tabela-imc">
+        <h3>Tabela IMC</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>IMC</th>
+              <th>Classificação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Menor do que 18,5</td><td>Abaixo do peso</td></tr>
+            <tr><td>18,5 a 24,9</td><td>Peso ideal</td></tr>
+            <tr><td>25 a 29,9</td><td>Sobrepeso</td></tr>
+            <tr><td>30 a 34,9</td><td>Obesidade de grau I</td></tr>
+            <tr><td>35 a 39,9</td><td>Obesidade de grau II</td></tr>
+            <tr><td>Acima de 40</td><td>Obesidade mórbida</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tabela-rcq">
+        <h3>Tabela RCQ</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Idade</th>
+              <th >Baixo</th>
+              <th >Moderado</th>
+              <th >Alto</th>
+              <th >Muito Alto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Até 29</td><td>&lt; 0,83</td><td>0,83 - 0,88</td><td>0,89 - 0,94</td><td>&gt; 0,94</td></tr>
+            <tr><td>30 - 39</td><td>&lt; 0,84</td><td>0,84 - 0,91</td><td>0,92 - 0,96</td><td>&gt; 0,96</td></tr>
+            <tr><td>40 - 49</td><td>&lt; 0,88</td><td>0,88 - 0,95</td><td>0,96 - 1,00</td><td>&gt; 1,00</td></tr>
+            <tr><td>50 - 59</td><td>&lt; 0,90</td><td>0,90 - 0,96</td><td>0,97 - 1,02</td><td>&gt; 1,02</td></tr>
+            <tr><td>&gt; 59</td><td>&lt; 0,91</td><td>0,91 - 0,98</td><td>0,99 - 1,03</td><td>&gt; 1,03</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
           </div>
         </div>
+
+        <!--MODAL HISTÓRICO ANTROPOMETRIA-->
+        
         <!--AVALIAÇÃO DA DOR-->
         <div class="tab-content" id="avaliacao-dor" style="display: none">
           <div class="evolucao-padrao-container">

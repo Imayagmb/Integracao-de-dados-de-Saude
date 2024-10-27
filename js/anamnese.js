@@ -88,3 +88,41 @@ function abrirModal() {
 function fecharModal() {
   document.getElementById('modalAnamnese').style.display = 'none';
 }
+
+//MODAL HISTÓTICO ANTROPOMETRIA
+
+// Abre o modal ao clicar no botão de histórico
+document.querySelector(".hist-button").onclick = function() {
+  document.getElementById("modalHistoricoAntropometria").style.display = "block";
+}
+
+// Fecha o modal ao clicar no botão de fechar
+document.querySelector(".fechar-historico-antropometria").onclick = function() {
+  document.getElementById("modalHistoricoAntropometria").style.display = "none";
+}
+
+// Fecha o modal ao clicar fora da área do modal
+window.onclick = function(event) {
+  if (event.target == document.getElementById("modalHistoricoAntropometria")) {
+    document.getElementById("modalHistoricoAntropometria").style.display = "none";
+  }
+}
+
+//MODAL RESULTADO ANTROPOMETRIA
+
+// Abre o modal ao clicar no botão de resultado
+document.querySelector(".result-button").onclick = function() {
+  document.getElementById("modalResultadoAvaliacao").style.display = "block";
+}
+
+// Fecha o modal ao clicar no botão de fechar
+document.querySelector(".fechar-resultado-avaliacao").onclick = function() {
+  document.getElementById("modalResultadoAvaliacao").style.display = "none";
+}
+
+// Fecha o modal ao clicar fora da área do modal
+window.onclick = function(event) {
+  if (event.target == document.getElementById("modalResultadoAvaliacao")) {
+    document.getElementById("modalResultadoAvaliacao").style.display = "none";
+  }
+}
