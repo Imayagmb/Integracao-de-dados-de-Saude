@@ -13,7 +13,7 @@ O projeto está em desenvolvimento e as seguintes páginas de front-end foram im
 
 ### Próximos Passos
 
-O projeto está em andamento e futuras funcionalidades estão planejadas, como:
+O projeto está em andamento e futuras funcionalidades estão sendo planejadas, como:
 
 - Registro de Evolução do Paciente
 - Gestão de prontuários eletrônicos
